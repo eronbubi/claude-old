@@ -96,7 +96,7 @@ Dieser Windows-10-Laptop (HP ProBook 650 G3, i5-7300U, 16 GB RAM) wird mein Game
 Geh Schritt für Schritt vor, teste jeden Dienst, erkläre kurz auf Deutsch und frag vor riskanten Änderungen. Am Schluss gib mir eine Liste aller Dienste mit Adressen.
 ```
 
-### Laptop 2 – i7 (Zentrale)
+### Laptop 2 – i7 (Zentrale + KI)
 
 ```
 Dieser Windows-10-Laptop (HP ProBook 470 G1, i7-4702MQ, 8 GB RAM) wird die Zentrale meines Homelabs. Kein Docker, kein WSL, Virtualisierung ist aus. Bitte installiere und richte ein:
@@ -107,7 +107,7 @@ Dieser Windows-10-Laptop (HP ProBook 470 G1, i7-4702MQ, 8 GB RAM) wird die Zentr
 4. Gitea auf Port 3000
 5. AdGuard Home mit Weboberfläche auf Port 3080
 6. NSSM, damit alle Dienste als Windows-Dienst automatisch starten
-7. Open WebUI soll später Ollama auf dem Tailscale-Rechner "i5-6" Port 11434 nutzen, bereite das nur vor
+7. Ollama lokal installieren und das Modell qwen3:4b herunterladen (passt in 8 GB RAM). Open WebUI soll dieses lokale Ollama (http://localhost:11434) nutzen. Später kommt noch ein zweiter Ollama-Server auf dem Tailscale-Rechner "i5-6" dazu, bereite vor, dass man den in Open WebUI zusätzlich eintragen kann
 8. Firewall-Regeln nur fürs private Netz und Tailscale
 9. Remotedesktop aktivieren
 
