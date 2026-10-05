@@ -46,6 +46,21 @@ irm https://raw.githubusercontent.com/eronbubi/claude-old/main/install-claude-co
 
 Am Ende öffnet sich Claude Code automatisch in einem neuen Fenster.
 
+## 🛠️ Fehlerbehebung
+
+**Fehler: "githubusercontent.com ... wurde nicht als Name eines Cmdlet erkannt"**
+
+Der Befehl ist beim Kopieren in zwei Zeilen zerbrochen. So geht's:
+
+1. PowerShell schliessen und neu **als Administrator** öffnen
+2. Den Befehl als **eine einzige Zeile** einfügen. Er muss mit `irm` anfangen und mit `iex` aufhören:
+
+```powershell
+irm https://raw.githubusercontent.com/eronbubi/claude-old/main/install-claude-app.ps1 | iex
+```
+
+3. Erst ganz am Schluss Enter drücken. Das `|` macht man auf der Schweizer Tastatur mit **AltGr + 7**.
+
 ## Lizenz
 
 MIT, siehe [LICENSE](LICENSE).
