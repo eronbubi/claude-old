@@ -1,5 +1,17 @@
 # claude-old
 
+## 🧓 Altes Windows 10? Alles automatisch
+
+Wenn die Claude-App sagt, dass deine Windows-Version zu alt ist, nimm diesen Installer. Er updatet Windows 10 automatisch auf 22H2 (gratis, Dateien bleiben) und installiert danach die Claude-App, die sich beim nächsten Login von selbst öffnet.
+
+PowerShell **als Administrator** öffnen und einfügen:
+
+```powershell
+irm https://raw.githubusercontent.com/eronbubi/claude-old/main/install-alt-windows.ps1 | iex
+```
+
+⏱️ Dauer ca. 1–2 Stunden, der Laptop startet mehrmals neu. Nicht ausschalten!
+
 ## 🖥️ Claude Desktop-App installieren
 
 PowerShell öffnen und einfügen (kein Git, kein Node nötig):
