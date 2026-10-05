@@ -49,3 +49,7 @@ Am Ende öffnet sich Claude Code automatisch in einem neuen Fenster.
 ## Lizenz
 
 MIT, siehe [LICENSE](LICENSE).
+
+## 📋 Homelab-Prompts
+
+Fertige Prompts zum Einrichten der 4 Laptops findest du im Ordner [prompts](prompts/).
