@@ -1,5 +1,13 @@
 # claude-old
 
+## ⚡ Schnell-Installation
+
+PowerShell **als Administrator** öffnen und einfügen:
+
+```powershell
+irm https://raw.githubusercontent.com/eronbubi/claude-old/main/install-claude-code.ps1 | iex
+```
+
 Inoffizieller Installer für **Claude Code** auf älteren Windows-10-Rechnern, bei denen der offizielle Installer nicht klappt.
 
 > ⚠️ Kein offizielles Anthropic-Projekt. Auf sehr alten Windows-Builds (vor 1809) kann Claude Code trotzdem nicht laufen. Dann hilft nur ein Windows-Update auf 22H2.
