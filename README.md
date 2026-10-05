@@ -1,6 +1,16 @@
 # claude-old
 
-## ⚡ Schnell-Installation
+## 🖥️ Claude Desktop-App installieren
+
+PowerShell öffnen und einfügen (kein Git, kein Node nötig):
+
+```powershell
+irm https://raw.githubusercontent.com/eronbubi/claude-old/main/install-claude-app.ps1 | iex
+```
+
+Die App öffnet sich danach automatisch. Oder `install-app.bat` doppelklicken.
+
+## ⚡ Claude Code (Terminal) installieren
 
 PowerShell **als Administrator** öffnen und einfügen:
 
