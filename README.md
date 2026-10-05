@@ -97,6 +97,23 @@ Dieser Windows-10-Laptop (HP ProBook 650 G3, i5-7300U, 16 GB RAM) wird mein Game
 Geh Schritt für Schritt vor, teste jeden Dienst, erkläre kurz auf Deutsch und frag vor riskanten Änderungen. Am Schluss gib mir eine Liste aller Dienste mit Adressen.
 ```
 
+#### ➕ Zusatz-Prompt Laptop 1 (KI nachrüsten)
+
+Falls der Laptop schon mit dem alten Prompt (ohne KI) eingerichtet wurde:
+
+```
+Zusätzlich zu dem, was du schon eingerichtet hast (Minecraft mit Crafty, Jellyfin, Tailscale), soll dieser Laptop jetzt auch KI laufen lassen. Bitte:
+
+1. Ollama installieren und so einrichten, dass es beim Windows-Start automatisch läuft
+2. Die Umgebungsvariable OLLAMA_HOST=0.0.0.0 setzen, damit Open WebUI auf dem Tailscale-Rechner "i7" auf Port 11434 zugreifen kann
+3. Das Modell qwen3:8b herunterladen und kurz testen
+4. Den Minecraft-Server in Crafty auf höchstens 4 GB RAM begrenzen, damit genug für die KI bleibt
+5. Eine Firewall-Regel für Port 11434 hinzufügen, nur fürs private Netz und Tailscale
+6. Prüfen, dass Minecraft, Jellyfin und Ollama danach alle laufen
+
+Erkläre kurz auf Deutsch und frag vor riskanten Änderungen. Am Schluss sag mir die Adresse von Ollama.
+```
+
 ### Laptop 2 – i7 (Zentrale + KI)
 
 ```
