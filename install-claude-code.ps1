@@ -46,4 +46,12 @@ if (Test-Path $bash) {
 Info "Installiere Claude Code ueber npm..."
 npm install -g @anthropic-ai/claude-code
 
-Info "Fertig! PowerShell neu oeffnen und 'claude' eintippen."
+# 6. Pruefen und Claude Code automatisch in neuem Fenster starten
+$npmBin = Join-Path $env:APPDATA "npm"
+$claudeCmd = Join-Path $npmBin "claude.cmd"
+if (Test-Path $claudeCmd) {
+    Info "Fertig! Claude Code wird jetzt geoeffnet..."
+    Start-Process powershell.exe -ArgumentList "-NoExit", "-Command", "Set-Location `$env:USERPROFILE; & '$claudeCmd'"
+} else {
+    Write-Host "Claude Code wurde nicht gefunden. Bitte Fehlermeldung oben pruefen." -ForegroundColor Red
+}

@@ -34,7 +34,7 @@ PowerShell als Administrator öffnen und einfügen:
 irm https://raw.githubusercontent.com/eronbubi/claude-old/main/install-claude-code.ps1 | iex
 ```
 
-Danach PowerShell neu öffnen und `claude` eintippen.
+Am Ende öffnet sich Claude Code automatisch in einem neuen Fenster.
 
 ## Lizenz
 

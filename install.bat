@@ -8,5 +8,5 @@ if %errorlevel% neq 0 (
 )
 powershell -NoProfile -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; irm https://raw.githubusercontent.com/eronbubi/claude-old/main/install-claude-code.ps1 | iex"
 echo.
-echo Fertig! Neues PowerShell-Fenster oeffnen und "claude" eintippen.
+echo Fertig! Claude Code oeffnet sich in einem neuen Fenster.
 pause
