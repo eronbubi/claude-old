@@ -14,11 +14,16 @@ Inoffizieller Installer für **Claude Code** auf älteren Windows-10-Rechnern, b
 
 ## Benutzung
 
-PowerShell **als Administrator** öffnen:
+Du musst **nichts selbst installieren**. Git und Node.js werden automatisch im Hintergrund installiert.
+
+**Variante 1: Doppelklick**
+`install.bat` herunterladen und doppelklicken, dann bei der Windows-Frage auf **Ja** klicken.
+
+**Variante 2: Ein Befehl**
+PowerShell als Administrator öffnen und einfügen:
 
 ```powershell
-cd $env:USERPROFILE\Downloads
-Set-ExecutionPolicy -Scope Process Bypass -Force; .\install-claude-code.ps1
+irm https://raw.githubusercontent.com/eronbubi/claude-old/main/install-claude-code.ps1 | iex
 ```
 
 Danach PowerShell neu öffnen und `claude` eintippen.
